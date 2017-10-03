@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<jp.co.disney.apps.managed.kisekaeapp.launcher.AppsCustomizeTabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res/jp.co.disney.apps.managed.kisekaeapp"
+    android:background="#FF000000">
+
+    <ImageView
+        android:id="@+id/drawer_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"/>
+
+    <LinearLayout
+        android:id="@+id/apps_customize_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <!-- The layout_width of the tab bar gets overriden to align the content
+             with the text in the tabs in AppsCustomizeTabHost. -->
+        <FrameLayout
+            android:id="@+id/tabs_container"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal">
+            <jp.co.disney.apps.managed.kisekaeapp.launcher.FocusOnlyTabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:tabStripEnabled="false"
+                android:divider="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <jp.co.disney.apps.managed.kisekaeapp.system.view.pagedview.PageIndicatorView
+                android:id="@+id/page_indicator"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="top|center_horizontal" />
+
+            <jp.co.disney.apps.managed.kisekaeapp.launcher.AppsCustomizePagedView
+                android:id="@+id/apps_customize_pane_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                launcher:maxAppCellCountX="@integer/apps_customize_maxCellCountX"
+                launcher:maxAppCellCountY="@integer/apps_customize_maxCellCountY"
+                launcher:pageLayoutWidthGap="@dimen/apps_customize_pageLayoutWidthGap"
+                launcher:pageLayoutHeightGap="@dimen/apps_customize_pageLayoutHeightGap"
+                launcher:pageLayoutPaddingTop="36dp"
+                launcher:pageLayoutPaddingBottom="100dp"
+                launcher:pageLayoutPaddingLeft="@dimen/apps_customize_pageLayoutPaddingLeft"
+                launcher:pageLayoutPaddingRight="@dimen/apps_customize_pageLayoutPaddingRight"
+                launcher:widgetCellWidthGap="@dimen/apps_customize_widget_cell_width_gap"
+                launcher:widgetCellHeightGap="@dimen/apps_customize_widget_cell_height_gap"
+                launcher:widgetCountX="@integer/apps_customize_widget_cell_count_x"
+                launcher:widgetCountY="@integer/apps_customize_widget_cell_count_y"
+                launcher:maxGap="@dimen/workspace_max_gap" />
+            <FrameLayout
+                android:id="@+id/animation_buffer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:visibility="gone" />
+
+            <jp.co.disney.apps.managed.kisekaeapp.launcher.DrawerFilterView
+                android:id="@+id/apps_filter"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_gravity="bottom" />
+        </FrameLayout>
+    </LinearLayout>
+
+</jp.co.disney.apps.managed.kisekaeapp.launcher.AppsCustomizeTabHost>

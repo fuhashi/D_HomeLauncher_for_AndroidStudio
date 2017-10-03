@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/baseApp_dl_baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff" >
+
+    <View 
+	    android:layout_width="match_parent"
+	    android:layout_height="10dp"/>
+    
+<!-- 	<ImageView -->
+<!-- 	    android:src="@drawable/baseappdl_header" -->
+<!-- 	    android:layout_width="match_parent" -->
+<!-- 	    android:layout_height="wrap_content" -->
+<!-- 	    android:scaleType="centerCrop" -->
+<!-- 	    android:layout_marginTop="15dp" -->
+<!-- 	    /> -->
+	<ImageView
+	    android:id="@+id/baseApp_dl_header"
+	    android:src="@drawable/baseappdl_header"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    />
+
+	<TextView
+	    android:text="@string/baseapp_dl_txt"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#FF535252"
+	    android:paddingTop="10dp"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingBottom="15dp"/>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal">
+		<Button
+		    android:id="@+id/baseApp_dl_btn"
+		    android:background="@drawable/baseapp_dl_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="15dp"/>
+	<ImageView
+		android:id="@+id/baseApp_dl_footer"
+	    android:src="@drawable/baseappdl_footer"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    />
+	
+<!-- 	<ImageView -->
+<!-- 		    android:id="@+id/baseApp_dl_footer" -->
+<!-- 	    android:src="@drawable/baseappdl_footer" -->
+<!-- 	    android:layout_width="match_parent" -->
+<!-- 	    android:layout_height="wrap_content" -->
+<!-- 	    android:scaleType="centerCrop" -->
+<!-- 	    android:paddingTop="10dp" -->
+<!-- 	    /> -->
+</LinearLayout>

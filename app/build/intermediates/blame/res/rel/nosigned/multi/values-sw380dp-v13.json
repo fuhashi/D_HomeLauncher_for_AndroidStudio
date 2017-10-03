@@ -1,0 +1,45 @@
+[
+    {
+        "outputFile": "C:\\Users\\hashimoto\\Desktop\\Android8sourse\\forCanary\\D_HomeLauncher\\app\\build\\intermediates\\incremental\\mergeRelNosignedResources\\merged.dir\\values-sw380dp-v13\\values-sw380dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 60,
+                    "endOffset": 111
+                },
+                "from": {
+                    "file": "C:\\Users\\hashimoto\\Desktop\\Android8sourse\\forCanary\\D_HomeLauncher\\app\\src\\main\\res\\values-sw380dp\\dimens.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 724,
+                        "endColumn": 60,
+                        "endOffset": 780
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 116,
+                    "endColumn": 61,
+                    "endOffset": 173
+                },
+                "from": {
+                    "file": "C:\\Users\\hashimoto\\Desktop\\Android8sourse\\forCanary\\D_HomeLauncher\\app\\src\\main\\res\\values-sw380dp\\dimens.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 786,
+                        "endColumn": 61,
+                        "endOffset": 843
+                    }
+                }
+            }
+        ]
+    }
+]

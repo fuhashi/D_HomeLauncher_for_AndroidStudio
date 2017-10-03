@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="horizontal" >
+    
+
+	
+	<ImageView
+                android:id="@+id/appicon_list_selficon_btn"
+                android:background="@drawable/icon_gridtype_item_bg"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+<!--            android:background="@drawable/icon_gridtype_item_bg"  -->
+		
+</LinearLayout>
+

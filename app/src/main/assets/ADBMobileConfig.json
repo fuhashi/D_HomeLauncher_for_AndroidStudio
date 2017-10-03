@@ -1,0 +1,62 @@
+//Release
+/**/
+{
+    "version" : "1.0",
+    "analytics" : {
+        "rsids" : "wdgintjpspcapps",//本番レポートスイート名(QA)
+        "server" : "disneyinternational.112.2o7.net",
+        "charset" : "UTF-8",
+        "ssl" : true,
+        "offlineEnabled" : true,
+        "lifecycleTimeout" : 300,
+        "referrerTimeout" : 0,
+        "batchLimit" : 0,
+        "privacyDefault" : "optedin",
+		"backdateSessionInfo" : false,
+        "poi" : []
+    },
+    "target" : {
+        "clientCode" : "",
+        "timeout" : 5
+    },
+    "audienceManager" : {
+		"server" : "",
+        "analyticsForwardingEnabled": false
+    },
+    "acquisition" : {
+		"server" : "",
+        "appid" : ""
+    }
+}
+
+//dev
+/*
+{
+    "version" : "1.0",
+    "analytics" : {
+        "rsids" : "wdgintjpspcappsdev",//開発レポートスイート名
+        "server" : "192.168.1.43:50000", // [Bloodhound IP]:[Port]_sam"192.168.1.46:50000"
+        "charset" : "UTF-8",
+        "ssl" : false,//[false]:Bloodhound取得可能、[true]:Bloodhound取得不可
+        "offlineEnabled" : false,
+        "lifecycleTimeout" : 300,
+        "referrerTimeout" : 0,
+        "batchLimit" : 0,
+        "privacyDefault" : "optedin",
+		"backdateSessionInfo" : false,
+        "poi" : []
+    },
+    "target" : {
+        "clientCode" : "",
+        "timeout" : 5
+    },
+    "audienceManager" : {
+		"server" : "",
+        "analyticsForwardingEnabled": false
+    },
+    "acquisition" : {
+		"server" : "",
+        "appid" : ""
+    }
+}
+*/

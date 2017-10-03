@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <skip />
+    <!-- Application name -->
+    <string name="application_name">"Disneyきせかえ"</string>
+        <!-- Application(ICON) name -->
+    <string name="application_name_shortcut">"Disneyきせかえアイコン"</string>
+    <!-- Accessibility-facing application name -->
+    <string name="home">"Home"</string>
+    <!-- Name for all applications running as this uid. -->
+    <string name="uid_name">"Android Core Apps"</string>
+    <!-- Default folder name -->
+    <string name="folder_name"></string>
+    <!-- Title of dialog that appears after user selects Wallpaper from menu -->
+    <string name="chooser_wallpaper">"壁紙の選択"</string>
+    <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
+    <string name="activity_not_found">"このアプリはインストールされていません。"</string>
+
+    <!-- AppsCustomize pane -->
+    <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
+    <string name="long_press_widget_to_add">"ウィジェットを追加するには押し続けます。"</string>
+    <!-- The format string for the dimensions of a widget in the drawer -->
+    <!-- There is a special version of this format string for Farsi -->
+    <string name="widget_dims_format">"%1$d×%2$d"</string>
+
+    <!-- External-drop widget pick label format string [CHAR_LIMIT=25] -->
+    <string name="external_drop_widget_pick_format" translatable="false">%1$s (%2$d \u00d7 %3$d)</string>
+    <!-- External-drop widget error string.  This is the error that is shown
+         when you drag and item into the homescreen and it is unable to fit,
+         or an error is encountered. [CHAR_LIMIT=50] -->
+    <string name="external_drop_widget_error">"このホーム画面にアイテムをドロップできませんでした。"</string>
+    <!-- External-drop widget pick title.  This is shown as the title of the
+         dialog which allows you to pick which widgets to handle a particular
+         drop if there are multiple choices. [CHAR_LIMIT=35] -->
+    <string name="external_drop_widget_pick_title">"作成するウィジェットの選択"</string>
+
+    <!-- Folders -->
+    <skip />
+    <!-- Label of Folder name field in Rename folder dialog box -->
+    <string name="rename_folder_label">"フォルダ名"</string>
+    <!-- Title of dialog box -->
+    <string name="rename_folder_title">"フォルダ名を変更"</string>
+    <!-- Buttons in Rename folder dialog box -->
+    <string name="rename_action">"OK"</string>
+    <!-- Buttons in Rename folder dialog box -->
+    <string name="cancel_action">"キャンセル"</string>
+
+    <!-- Shortcuts -->
+    <skip />
+    <!-- Title of dialog box -->
+    <string name="menu_item_add_item">"ホーム画面に追加"</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all apps -->
+    <string name="group_applications">"アプリ"</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all shortcut
+s -->
+    <string name="group_shortcuts">"ショートカット"</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all widgets/gadgets -->
+    <string name="group_widgets">"ウィジェット"</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of apps that can set the wallpaper-->
+    <string name="group_wallpapers">"壁紙"</string>
+    <!-- Error message when user has filled all their home screens -->
+    <string name="completely_out_of_space">"ホーム画面に空きスペースがありません。"</string>
+    <!-- Error message when user has filled a home screen -->
+    <string name="out_of_space">"ホーム画面に空きスペースがありません。"</string>
+    <!-- Error message when user has filled the hotseat -->
+    <string name="hotseat_out_of_space">"ホットシートに空きスペースがありません。"</string>
+    <!-- Error message when user tries to drop an invalid item on the hotseat -->
+    <string name="invalid_hotseat_item">"このウィジェットはホットシートには大きすぎます。"</string>
+    <!-- Message displayed when a shortcut is created by an external application -->
+    <string name="shortcut_installed">"ショートカット「<xliff:g id="NAME">%s</xliff:g>」を作成しました。"</string>
+    <!-- Message displayed when a shortcut is uninstalled by an external application -->
+    <string name="shortcut_uninstalled">"ショートカット「<xliff:g id="NAME">%s</xliff:g>」を削除しました。"</string>
+    <!-- Message displayed when an external application attemps to create a shortcut that already exists -->
+    <string name="shortcut_duplicate">"ショートカット「<xliff:g id="NAME">%s</xliff:g>」は既に存在します。"</string>
+    <string name="shortcut_install_failed">"ショートカットの作成に失敗しました。"</string>
+
+    <!-- Title of dialog when user is selecting shortcut to add to homescreen -->
+    <string name="title_select_shortcut">"ショートカットを選択"</string>
+    <!-- Title of dialog when user is selecting an application to add to homescreen -->
+    <string name="title_select_application">"アプリの選択"</string>
+
+    <!-- All applications label -->
+    <string name="all_apps_button_label">"アプリ"</string>
+
+    <!-- Label for button in all applications label to go back home (to the workspace / desktop)
+         for accessibilty (spoken when the button gets focus). -->
+    <string name="all_apps_home_button_label">"ホーム"</string>
+    <!-- Label for trash icon on workspace. Meant to communicate the idea of removing the
+         icon/widget from the home screen, but not permanently. [CHAR_LIMIT=30] -->
+    <string name="delete_zone_label_workspace">"削除"</string>
+    <!-- Label for trash icon in All Apps. The icon/widget will become completely unavailable on the
+         device. [CHAR_LIMIT=30]-->
+    <string name="delete_zone_label_all_apps">"アンインストール"</string>
+
+    <!-- Label for delete drop target. [CHAR_LIMIT=30] -->
+    <string name="delete_target_label">"削除"</string>
+
+    <!-- Accessibility: AllApps button -->
+    <string name="accessibility_all_apps_button">"アプリ"</string>
+    <!-- Accessibility: Delete button -->
+    <string name="accessibility_delete_button">"削除"</string>
+
+    <!-- Label for trash icon in All Apps, when an updated system app is selected. The update will
+         be uninstalled. [CHAR_LIMIT=30] -->
+    <string name="delete_zone_label_all_apps_system_app">"アップデートを削除"</string>
+
+    <!-- Menus items: -->
+    <skip />
+    <!-- Verb, menu item used to add an item on the desktop -->
+    <string name="menu_add">"追加"</string>
+    <!-- Noun, menu item used to set the desktop's wallpaper -->
+    <string name="menu_wallpaper">"壁紙"</string>
+
+    <!--  Strings for the contextual action bar (CAB) in All Apps -->
+    <skip />
+    <!-- Describes the button for uninstalling the currently selected application.
+         Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none] -->
+    <string name="cab_menu_delete_app">"アプリをアンインストール"</string>
+    <!-- Describes the button for getting details/info about currently selected application.
+         Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none] -->
+    <string name="cab_menu_app_info">"アプリの詳細"</string>
+    <!-- Appears in the CAB when an app is selected in All Apps or Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_app_selection_text">"1つのアプリが選択されています"</string>
+    <!-- Appears in the CAB when a widget is selected in Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_widget_selection_text">"1つのウィジェットが選択されています"</string>
+    <!-- Appears in the CAB when a folder is selected in Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_folder_selection_text">"1つのフォルダが選択されています"</string>
+    <!-- Appears in the CAB when a shortcut is selected in Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_shortcut_selection_text">"1つのショートカットが選択されています"</string>
+
+    <!-- Panel edit -->
+    <string name="has_reached_max_panel">"追加できるパネルは最大9枚までです"</string>
+
+    <!-- Widgets: -->
+    <skip />
+
+    <!-- Text to show user in place of a gadget when we can't display it properly -->
+    <string name="gadget_error_text">"ウィジェットを表示できません"</string>
+
+    <!-- Text to inform the user that they can't uninstall a system application -->
+    <string name="uninstall_system_app_text">"このシステムアプリはアンインストールできません。"</string>
+
+    <!-- Title of the Android Dreams (screensaver) module -->
+    <string name="dream_name">"Rocket Launcher"</string>
+
+    <!-- Default folder title -->
+    <string name="folder_hint_text">"名前のないフォルダ"</string>
+
+    <!-- Accessibility -->
+    <skip />
+
+    <!-- The format string for Workspace descriptions [CHAR_LIMIT=none] -->
+    <string name="workspace_description_format">"ホーム画面: %1$d"</string>
+
+    <!-- The format string for default page scroll text [CHAR_LIMIT=none] -->
+    <string name="default_scroll_format">"%1$d/%2$dページ"</string>
+    <!-- The format string for Workspace page scroll text [CHAR_LIMIT=none] -->
+    <string name="workspace_scroll_format">"ホーム画面: %1$d/%2$d"</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_apps_scroll_format">"アプリの%1$d/%2$dページ"</string>
+    <string name="apps_customize_disney_scroll_format">"Disneyアプリの%1$d/%2$dページ"</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_widgets_scroll_format">"ウィジェットの%1$d/%2$dページ"</string>
+
+    <!-- Folder accessibility -->
+    <!-- The format string for when a folder is opened, speaks the dimensions -->
+    <string name="folder_opened">"フォルダが開いています。<xliff:g id="WIDTH">%1$d</xliff:g>x<xliff:g id="HEIGHT">%2$d</xliff:g>の大きさです"</string>
+    <!-- Instruction that clicking outside will close folder -->
+    <string name="folder_tap_to_close">"タップしてフォルダを閉じます"</string>
+    <!-- Instruction that clicking outside will commit folder rename -->
+    <string name="folder_tap_to_rename">"タップして名前の変更を保存します"</string>
+    <!-- Indication that folder closed -->
+    <string name="folder_closed">"フォルダは閉じています"</string>
+    <!-- Folder renamed format -->
+    <string name="folder_renamed">"フォルダの名前を「<xliff:g id="NAME">%1$s</xliff:g>」に変更しました"</string>
+    <!-- Folder name format -->
+    <string name="folder_name_format">"フォルダ: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+
+    <string name="loop_setting">画面ループ設定</string>
+
+    <!--  Widget -->
+    <string name="widget_battery_name">Disneyきせかえ バッテリーウィジェット(2×3)</string>
+
+    <string name="title_widget_picker">ウィジェットを選択</string>
+    <string name="err_msg_load_theme">テーマの読込に失敗しました。</string>
+    <string name="err_msg_no_theme_history">設定履歴がありません</string>
+
+</resources>

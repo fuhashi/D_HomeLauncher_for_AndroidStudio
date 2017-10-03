@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    signingConfigs {
+        debugsigned {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('C:/Users/hashimoto/.android/debug.keystore')
+            storePassword 'android'
+        }
+        nihachisigned {
+            keyAlias '28'
+            keyPassword 'nihachi28'
+            storeFile file('C:/28.keystore')
+            storePassword 'nihachi28'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+
+        sourceSets {
+            main {
+                manifest.srcFile '../AndroidManifest.xml'
+//                manifest.srcFile 'AndroidManifest.xml'
+            }
+        }
+
+
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "jp.co.disney.apps.managed.kisekaeapp"
+        minSdkVersion 15
+        targetSdkVersion 22
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.nihachisigned
+            zipAlignEnabled true
+        }
+        nosigned {
+            debuggable false
+            zipAlignEnabled true
+        }
+        debug {
+            zipAlignEnabled true
+        }
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        deb {
+            dimension "default"
+        }
+        rel {
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-compat:26.0.2'
+    implementation 'com.android.support:support-core-utils:26.0.2'
+    compile files('libs/admsAppLibrary.jar')
+    compile files('libs/adobeMobileLibrary-4.13.5.jar')
+    compile files('libs/gdx-backend-android.jar')
+    compile files('libs/gdx.jar')
+}

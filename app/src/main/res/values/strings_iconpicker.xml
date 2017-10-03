@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_appli_picker">アプリを選択</string>
+    <string name="title_appli_picker_close">閉じる</string>
+    <string name="err_msg_appli_picker">通信エラーが発生しました。\n通信環境の良いところで\n再度ご利用ください。</string>
+
+</resources>

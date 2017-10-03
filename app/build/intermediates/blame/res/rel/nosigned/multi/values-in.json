@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\hashimoto\\Desktop\\Android8sourse\\forCanary\\D_HomeLauncher\\app\\build\\intermediates\\incremental\\mergeRelNosignedResources\\merged.dir\\values-in\\values-in.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 100,
+                    "endOffset": 151
+                },
+                "from": {
+                    "file": "C:\\Users\\hashimoto\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.2.aar\\244105a343daf13f5819abe6e33f5347\\res\\values-in\\values-in.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 100,
+                        "endOffset": 151
+                    }
+                }
+            }
+        ]
+    }
+]

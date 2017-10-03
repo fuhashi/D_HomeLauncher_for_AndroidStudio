@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical" >
+
+        
+	<LinearLayout
+		android:id="@+id/setapp_header"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+            
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+		            
+			<ImageView
+                android:id="@+id/setapp_list_all_checkbox_caption"
+                android:src="@drawable/icon_listtype_allcheck_text"
+                android:background="#e6e6e6"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+			
+			<jp.co.disney.apps.managed.kisekaeapp.iconpicker.SizeChangeableCheckBox
+        		android:id="@+id/setapp_list_all_checkbox"
+        		android:background="#e6e6e6"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	style="@style/CustomCheckBox"
+            	android:scaleType="fitXY"
+            	android:checked="false" />
+			
+		</LinearLayout>
+
+
+			
+			<ImageView
+                android:id="@+id/setapp_list_title"
+                android:src="@drawable/icon_common_title"
+                android:background="#e6e6e6"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        
+				<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dip"
+				android:src="@drawable/icon_listtype_title_line"
+				android:scaleType="fitXY"
+				android:gravity="fill_horizontal"
+				android:layout_marginLeft="0dip"
+				android:layout_marginRight="0dip"/>
+			
+		
+        
+		<ListView
+        	android:id="@+id/icon_list"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:divider="@null"
+            android:layout_weight="1"        />
+
+		     
+		<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="2dip"
+				android:src="@drawable/icon_listtype_bottom_line"
+				android:scaleType="fitXY"
+				android:gravity="fill_horizontal"
+				android:layout_marginLeft="0dip"
+				android:layout_marginRight="0dip"/>
+			
+		     
+
+        <LinearLayout
+            android:id="@+id/setapp_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <ImageButton
+                android:id="@+id/setapp_cancel_btn"
+                android:src="@drawable/icon_listtype_button_cancel"
+                android:background="#e6e6e6"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+<!--                 android:layout_weight="1" -->
+<!--                 android:gravity="center" -->
+
+			<ImageButton
+                android:id="@+id/setapp_do_btn"
+                android:src="@drawable/icon_listtype_button_puthome"
+                android:background="#e6e6e6"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+

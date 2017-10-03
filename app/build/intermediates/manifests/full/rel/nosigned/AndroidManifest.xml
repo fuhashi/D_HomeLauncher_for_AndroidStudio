@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.co.disney.apps.managed.kisekaeapp"
+    android:installLocation="internalOnly"
+    android:versionCode="41"
+    android:versionName="4.1.7" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+    <original-package android:name="jp.co.disney.apps.managed.kisekaeapp" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BIND_APPWIDGET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> Pending中20160419 -->
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <application
+        android:name="jp.co.disney.apps.managed.kisekaeapp.launcher.LauncherApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher_home"
+        android:label="@string/application_name"
+        android:largeHeap="true" >
+        <meta-data
+            android:name="AppId"
+            android:value="app012000533" />
+        <!-- android:taskAffinityを入れたらホームに戻った時にも消えなくなった 2015/7/6 -->
+        <activity
+            android:name="jp.co.disney.apps.managed.kisekaeapp.SplashActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTask"
+            android:process="jp.co.disney.apps.managed.kisekaeapp.process.catalog"
+            android:screenOrientation="portrait"
+            android:taskAffinity="jp.co.disney.apps.managed.kisekaeapp.task.catalog"
+            android:theme="@style/MyTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="jp.co.disney.apps.managed.kisekaeapp"
+                    android:pathPrefix="/AssetDetail"
+                    android:scheme="dmarketinternal" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="jp.co.disney.apps.managed.kisekaeapp"
+                    android:pathPrefix="/changemember"
+                    android:scheme="dmarketinternal" />
+            </intent-filter>
+        </activity>
+
+        <!-- AuthGetActivity -->
+        <activity
+            android:name="jp.co.disney.apps.managed.kisekaeapp.AuthGetActivity"
+            android:configChanges="orientation|keyboardHidden|uiMode"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="jp.co.disney.apps.managed.kisekaeapp.launcher.Launcher"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:resumeWhilePausing="true"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/Theme"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Intent received used to install shortcuts from other applications -->
+        <receiver
+            android:name="jp.co.disney.apps.managed.kisekaeapp.launcher.InstallShortcutReceiver"
+            android:permission="com.android.launcher.permission.INSTALL_SHORTCUT" >
+            <intent-filter>
+                <action android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
+                <action android:name="jp.co.disney.apps.managed.kisekaeapp.action.INSTALL_SHORTCUT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Intent received used to uninstall shortcuts from other applications -->
+        <receiver
+            android:name="jp.co.disney.apps.managed.kisekaeapp.launcher.UninstallShortcutReceiver"
+            android:permission="com.android.launcher.permission.UNINSTALL_SHORTCUT" >
+            <intent-filter>
+                <action android:name="com.android.launcher.action.UNINSTALL_SHORTCUT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="jp.co.disney.apps.managed.kisekaeapp.launcher.PackageChangedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="jp.co.disney.apps.managed.kisekaeapp.launcher.BadgeReciever" >
+            <intent-filter>
+                <action android:name="android.intent.action.BADGE_COUNT_UPDATE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="jp.co.disney.apps.managed.kisekaeapp.launcher.LauncherProvider"
+            android:authorities="jp.co.disney.apps.managed.kisekaeapp.settings"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.nfc.disable_beam_default"
+            android:value="true" />
+
+        <!-- 10AppsLibrary -->
+        <!-- 10Apps_Live -->
+        <!-- <meta-data android:name="LibDebugFlg" android:value="false" /> -->
+        <!-- <meta-data android:name="LibStagingFlg" android:value="false" /> -->
+
+
+        <!-- 10Apps_Staging -->
+        <!-- <meta-data android:name="LibDebugFlg" android:value="true" /> -->
+        <!-- <meta-data android:name="LibStagingFlg" android:value="true" /> -->
+
+
+        <!-- <meta-data android:name="LibDownloadUrl" android:value="http://aka-spcd.disney.co.jp/SP/CA/Prod/Managed/012000533.apk" /> -->
+        <!-- <activity -->
+        <!-- android:name="jp.co.disney.apps.common.auth10apps.ui.AuthActivity" -->
+        <!-- android:theme="@android:style/Theme.NoTitleBar" -->
+        <!-- android:label="@string/application_name" -->
+        <!-- android:configChanges="orientation|keyboardHidden" -->
+        <!-- android:launchMode="standard" -->
+        <!-- android:screenOrientation="portrait" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="jp.co.disney.apps.common.auth10apps.ui.BrowserAppActivity" -->
+        <!-- android:theme="@android:style/Theme.NoTitleBar" -->
+        <!-- android:label="@string/application_name" -->
+        <!-- android:configChanges="orientation|keyboardHidden" -->
+        <!-- android:screenOrientation="portrait" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="jp.co.disney.apps.common.auth10apps.ui.DownloadActivity" -->
+        <!-- android:theme="@android:style/Theme.NoTitleBar" -->
+        <!-- android:configChanges="orientation|keyboardHidden" -->
+        <!-- android:screenOrientation="portrait" > -->
+        <!-- </activity> -->
+
+
+        <!-- <activity -->
+        <!-- android:exported="true" -->
+        <!-- android:name="jp.co.disney.apps.managed.kisekaeapp.AuthScheme10AppsActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden|uiMode" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:theme="@style/Theme" > -->
+        <!-- <intent-filter > -->
+        <!-- <action android:name="android.intent.action.VIEW"/> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE"/> -->
+        <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+        <!-- <data android:scheme="dmarketinternal" android:host="jp.co.disney.apps.managed.kisekaeapp" android:pathPrefix="/newmember"/> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+        <activity
+            android:name="jp.co.disney.apps.managed.kisekaeapp.spp.BaseAppDownloadActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name=".STATUS_CODE_OK" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <!-- BannerActivity -->
+        <activity
+            android:name="jp.co.disney.apps.managed.kisekaeapp.spp.BannerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode"
+            android:exported="false"
+            android:process="jp.co.disney.apps.dm.kisekae2.process.catalog"
+            android:screenOrientation="portrait"
+            android:taskAffinity="jp.co.disney.apps.dm.kisekae2.task.catalog"
+            android:theme="@style/Theme" >
+
+            <!-- <intent-filter > -->
+            <!-- <action android:name="android.intent.action.VIEW"/> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE"/> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <!-- widget -->
+        <receiver
+            android:name="jp.co.disney.apps.managed.kisekaeapp.widgetbattery.WidgetBattery"
+            android:label="@string/widget_battery_name" > <!-- android:label= "@string/application_name" -->
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widgetbattery" />
+        </receiver> <!-- android:name=".widgetbattery.WidgetBattery"  android:name="android.appwidget.provider" -->
+        <!--  -->
+        <service android:name="jp.co.disney.apps.managed.kisekaeapp.widgetbattery.WidgetBattery$WidgetService" > <!-- android:exported="false" -->
+
+        </service>
+        <!--
+             <intent-filter>
+                <action android:name="jp.co.disney.apps.managed.kisekaeapp.widget_popclock.intent.ACTION_WIDGET_TOUCH" >
+                </action>
+            </intent-filter>
+        -->
+        <activity
+            android:name="jp.co.disney.apps.managed.kisekaeapp.widgetbattery.WidgetPickerActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:process="jp.co.disney.apps.managed.kisekaeapp.process.widgetpicker"
+            android:screenOrientation="portrait"
+            android:taskAffinity="jp.co.disney.apps.managed.kisekaeapp.task.widgetpicker"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="jp.co.disney.apps.managed.kisekaeapp.iconpicker.IconPickerActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:documentLaunchMode="always"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_launcher_icon"
+            android:label="@string/application_name_shortcut"
+            android:launchMode="standard"
+            android:process="jp.co.disney.apps.managed.kisekaeapp.process.iconpicker"
+            android:screenOrientation="portrait"
+            android:taskAffinity="jp.co.disney.apps.managed.kisekaeapp.task.iconpicker"
+            android:theme="@style/MyTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- DM linkage -->
+        <service
+            android:name="jp.co.disney.apps.managed.kisekaeapp.DisneyMarketBadgeLinkageIntentService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="disneykisekaeapp" />
+            </intent-filter>
+
+            <!-- <intent-filter> -->
+            <!-- <data -->
+            <!-- android:host="jp.co.disney.apps.managed.kisekaeapp" -->
+            <!-- android:pathPrefix="/AssetDetail" -->
+            <!-- android:scheme="dmarketinternal" /> -->
+            <!-- </intent-filter> -->
+
+        </service>
+
+        <!-- shortcut icon -->
+        <activity
+            android:name="jp.co.disney.apps.managed.kisekaeapp.iconpicker.IconSelectListTypeActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="jp.co.disney.apps.managed.kisekaeapp.iconpicker.IconSelectGridTypeActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.0.2" />
+    </application>
+
+</manifest>

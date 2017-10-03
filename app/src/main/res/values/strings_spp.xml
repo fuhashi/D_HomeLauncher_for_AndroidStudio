@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  	<string name="URL">http://aka-spcd.disney.co.jp/SP/CA/Prod/Base/</string>
+	<string name="PKG">jp.co.disney.apps.base.disneymarketapp</string>
+	<string name="baseapp_dl_txt">本アプリをご利用いただくには「Disneyマーケット」アプリが必要です。\n下記「ダウンロード」ボタンより「Disneyマーケット」アプリをダウンロード／インストールください。	</string>
+	<string name="baseapp_dl_dialog_title">Downloading...</string>
+	<string name="baseapp_dl_stop">通信エラーが発生しました。通信環境の良いところで再度ご利用ください。</string>
+	<string name="baseapp_dl_error">ディズニーマーケットのダウンロード処理でエラーが発生しました。しばらく時間をおいてから再度アクセスしてください。</string>
+
+	<string name="invalid_app_fig1">通信を有効にして再度起動してください</string>
+	<string name="invalid_app_fig2">会員登録をして再度起動してください</string>
+	<string name="invalid_app_fig3">Disneyポータルを有効にして再度起動してください</string>
+
+</resources>

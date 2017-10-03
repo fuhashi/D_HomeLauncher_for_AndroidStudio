@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.co.disney.apps.managed.kisekaeapp.launcher.PageEditScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res/jp.co.disney.apps.managed.kisekaeapp"
+    android:background="#ffe6e6e6"
+    android:orientation="vertical">
+
+    <jp.co.disney.apps.managed.kisekaeapp.launcher.PageEditCellLayout
+        android:id="@+id/page_edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        launcher:cellCountX="3"
+        launcher:cellCountY="3" />
+
+    <View android:background="@drawable/line" android:layout_height="1dp" android:layout_width="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/loop_setting"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/loop_setting"
+            android:textColor="#ff474747"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/loop_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <!--
+        <Switch
+            android:id="@+id/loop_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" /> -->
+
+    </RelativeLayout>
+
+</jp.co.disney.apps.managed.kisekaeapp.launcher.PageEditScreen>

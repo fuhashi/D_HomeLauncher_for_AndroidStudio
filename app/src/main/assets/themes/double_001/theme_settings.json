@@ -1,0 +1,9 @@
+{
+  "theme_id" : "double_001",
+  "num_wp" : 1,
+  "num_page" : 3,
+  "main_wp" : 0,
+  "default_page" : 1,
+  "text_color" : "#ff2e2e2e",
+  "page_wps" : [ 0, 0, 0 ]
+}

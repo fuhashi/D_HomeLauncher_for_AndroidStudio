@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#88000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ad_banner_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:background="#0030f3f1" />
+
+        <View
+            android:id="@+id/cancel_area"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right|top"
+            android:background="#00000000" />
+
+     <RelativeLayout
+        android:id="@+id/check_area"
+        android:layout_width="350dp"
+        android:layout_height="28dp"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:background="#00ec5faf" >
+
+        <CheckBox
+            android:id="@+id/check_block"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/gate_check" />
+
+        <ImageView
+            android:id="@+id/check_message"
+            android:layout_width="312dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/check_message" />
+    </RelativeLayout>
+        </RelativeLayout>
+
+
+</LinearLayout>

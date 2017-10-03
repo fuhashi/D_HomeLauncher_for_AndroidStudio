@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="extra_wallpapers">
+    </string-array>
+    <attr name="direction">
+        <!-- Vertical widget. -->
+        <enum name="vertical" value="0"/>
+        <!-- Horizontal widget. -->
+        <enum name="horizontal" value="1"/>
+    </attr>
+    <bool name="config_useDropTargetDownTransition">true</bool>
+    <bool name="config_workspaceFadeAdjacentScreens">false</bool>
+    <bool name="is_large_screen">false</bool>
+    <color name="appwidget_error_color">#FCCC</color>
+    <color name="black_7f000000">#7f000000</color>
+    <color name="bubble_dark_background">#20000000</color>
+    <color name="delete_target_hover_tint">#DAFF0000</color>
+    <color name="folder_icon_text_color">#FF000000</color>
+    <color name="gray_33494953">#33494953</color>
+    <color name="gray_777780">#ff777780</color>
+    <color name="gray_e6777780">#e6777780</color>
+    <color name="image_border_center">#FFFF3333</color>
+    <color name="image_border_end">#FF660000</color>
+    <color name="image_border_start">#40990000</color>
+    <color name="info_target_hover_tint">#DA0099CC</color>
+    <color name="navy_575763">#ff575763</color>
+    <color name="notification_action_color_filter">#ffffffff</color>
+    <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="ui_black">#ff000000</color>
+    <color name="ui_white">#ffe6e6e6</color>
+    <color name="white_12ffffff">#12ffffff</color>
+    <color name="white_fafafa">#fffafafa</color>
+    <color name="workspace_all_apps_and_delete_zone_text_color">#CCFFFFFF</color>
+    <color name="workspace_all_apps_and_delete_zone_text_shadow_color">#A0000000</color>
+    <color name="workspace_icon_text_color">#FFF</color>
+    <declare-styleable name="AppsCustomizePagedView"><attr format="integer" name="maxAppCellCountX"/><attr format="integer" name="maxAppCellCountY"/><attr format="dimension" name="widgetCellWidthGap"/><attr format="dimension" name="widgetCellHeightGap"/><attr format="integer" name="widgetCountX"/><attr format="integer" name="widgetCountY"/></declare-styleable>
+    <declare-styleable name="BaseCellLayout"><attr name="cellCountX"/><attr name="cellCountY"/></declare-styleable>
+    <declare-styleable name="CellLayout"><attr format="dimension" name="widthGap"/><attr format="dimension" name="heightGap"/><attr format="dimension" name="maxGap"/><attr name="cellCountX"/><attr name="cellCountY"/></declare-styleable>
+    <declare-styleable name="Extra"><attr format="string" name="key"/><attr format="string" name="value"/></declare-styleable>
+    <declare-styleable name="Favorite"><attr format="string" name="className"/><attr format="string" name="packageName"/><attr format="string" name="container"/><attr format="string" name="screen"/><attr format="string" name="x"/><attr format="string" name="y"/><attr format="string" name="spanX"/><attr format="string" name="spanY"/><attr format="reference" name="icon"/><attr format="reference" name="title"/><attr format="string" name="uri"/></declare-styleable>
+    <declare-styleable name="FontFamily"><attr format="string" name="fontProviderAuthority"/><attr format="string" name="fontProviderPackage"/><attr format="string" name="fontProviderQuery"/><attr format="reference" name="fontProviderCerts"/><attr name="fontProviderFetchStrategy">
+            
+            <enum name="blocking" value="0"/>
+            
+            <enum name="async" value="1"/>
+        </attr><attr format="integer" name="fontProviderFetchTimeout">
+          
+            <enum name="forever" value="-1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="FontFamilyFont"><attr name="fontStyle">
+            <enum name="normal" value="0"/>
+            <enum name="italic" value="1"/>
+        </attr><attr format="reference" name="font"/><attr format="integer" name="fontWeight"/></declare-styleable>
+    <declare-styleable name="Hotseat"><attr name="cellCountX"/><attr name="cellCountY"/></declare-styleable>
+    <declare-styleable name="PagedView"><attr format="dimension" name="pageLayoutWidthGap"/><attr format="dimension" name="pageLayoutHeightGap"/><attr format="dimension" name="pageLayoutPaddingTop"/><attr format="dimension" name="pageLayoutPaddingBottom"/><attr format="dimension" name="pageLayoutPaddingLeft"/><attr format="dimension" name="pageLayoutPaddingRight"/><attr format="dimension" name="pageSpacing"/><attr format="dimension" name="scrollIndicatorPaddingLeft"/><attr format="dimension" name="scrollIndicatorPaddingRight"/></declare-styleable>
+    <declare-styleable name="StrokedTextView"><attr format="color" name="strokeColor"/><attr format="color" name="strokeTextColor"/><attr format="float" name="strokeWidth"/></declare-styleable>
+    <declare-styleable name="Workspace"><attr format="integer" name="cellCountX"/><attr format="integer" name="cellCountY"/></declare-styleable>
+    <dimen name="app_icon_drawable_padding">6dp</dimen>
+    <dimen name="app_icon_padding_top">8dp</dimen>
+    <dimen name="app_icon_size">48dp</dimen>
+    <dimen name="app_widget_preview_label_margin_left">2dp</dimen>
+    <dimen name="app_widget_preview_label_margin_right">2dp</dimen>
+    <dimen name="app_widget_preview_label_margin_top">4dp</dimen>
+    <dimen name="app_widget_preview_padding_left">16dp</dimen>
+    <dimen name="app_widget_preview_padding_right">16dp</dimen>
+    <dimen name="app_widget_preview_padding_top">32dp</dimen>
+    <dimen name="apps_customize_cell_height">82dp</dimen>
+    <dimen name="apps_customize_cell_width">74dp</dimen>
+    <dimen name="apps_customize_max_gap">18dp</dimen>
+    <dimen name="apps_customize_pageLayoutHeightGap">-1dp</dimen>
+    <dimen name="apps_customize_pageLayoutPaddingBottom">10dp</dimen>
+    <dimen name="apps_customize_pageLayoutPaddingLeft">5dp</dimen>
+    <dimen name="apps_customize_pageLayoutPaddingRight">5dp</dimen>
+    <dimen name="apps_customize_pageLayoutPaddingTop">10dp</dimen>
+    <dimen name="apps_customize_pageLayoutWidthGap">-1dp</dimen>
+    <dimen name="apps_customize_widget_cell_height_gap">10dp</dimen>
+    <dimen name="apps_customize_widget_cell_width_gap">20dp</dimen>
+    <dimen name="button_bar_height">62dip</dimen>
+    <dimen name="compat_button_inset_horizontal_material">4dp</dimen>
+    <dimen name="compat_button_inset_vertical_material">6dp</dimen>
+    <dimen name="compat_button_padding_horizontal_material">8dp</dimen>
+    <dimen name="compat_button_padding_vertical_material">4dp</dimen>
+    <dimen name="compat_control_corner_material">2dp</dimen>
+    <dimen name="dragViewOffsetX">0dp</dimen>
+    <dimen name="dragViewOffsetY">0dp</dimen>
+    <dimen name="dragViewScale">12dp</dimen>
+    <dimen name="drop_target_drag_padding">14dp</dimen>
+    <dimen name="folder_cell_height">82dp</dimen>
+    <dimen name="folder_icon_padding_top">2dp</dimen>
+    <dimen name="folder_name_padding">10dp</dimen>
+    <dimen name="folder_padding">0dp</dimen>
+    <dimen name="hotseat_cell_height">64dp</dimen>
+    <dimen name="hotseat_height_gap">-1dp</dimen>
+    <dimen name="notification_action_icon_size">32dp</dimen>
+    <dimen name="notification_action_text_size">13sp</dimen>
+    <dimen name="notification_big_circle_margin">12dp</dimen>
+    <dimen name="notification_content_margin_start">8dp</dimen>
+    <dimen name="notification_large_icon_height">64dp</dimen>
+    <dimen name="notification_large_icon_width">64dp</dimen>
+    <dimen name="notification_main_column_padding_top">10dp</dimen>
+    <dimen name="notification_media_narrow_margin">@dimen/notification_content_margin_start</dimen>
+    <dimen name="notification_right_icon_size">16dp</dimen>
+    <dimen name="notification_right_side_padding_top">2dp</dimen>
+    <dimen name="notification_small_icon_background_padding">3dp</dimen>
+    <dimen name="notification_small_icon_size_as_large">24dp</dimen>
+    <dimen name="notification_subtext_size">13sp</dimen>
+    <dimen name="notification_top_pad">10dp</dimen>
+    <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="scroll_zone">20dp</dimen>
+    <dimen name="shortcut_preview_padding_left">0dp</dimen>
+    <dimen name="shortcut_preview_padding_right">0dp</dimen>
+    <dimen name="shortcut_preview_padding_top">0dp</dimen>
+    <dimen name="status_bar_height">25dip</dimen>
+    <dimen name="workspace_divider_padding_left">3dp</dimen>
+    <dimen name="workspace_divider_padding_right">3dp</dimen>
+    <dimen name="workspace_icon_text_size">12sp</dimen>
+    <dimen name="workspace_max_gap">16dp</dimen>
+    <dimen name="workspace_overscroll_drawable_padding">0dp</dimen>
+    <dimen name="workspace_page_spacing">-1dp</dimen>
+    <dimen name="workspace_spring_loaded_page_spacing">15dp</dimen>
+    <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <item name="line1" type="id"/>
+    <item name="line3" type="id"/>
+    <item name="text" type="id"/>
+    <item name="text2" type="id"/>
+    <item name="title" type="id"/>
+    <integer name="apps_customize_maxCellCountX">-1</integer>
+    <integer name="apps_customize_maxCellCountY">-1</integer>
+    <integer name="apps_customize_widget_cell_count_x">2</integer>
+    <integer name="apps_customize_widget_cell_count_y">3</integer>
+    <integer name="config_allAppsBatchLoadDelay">0</integer>
+    <integer name="config_allAppsBatchSize">0</integer>
+    <integer name="config_appsCustomizeDragSlopeThreshold">150</integer>
+    <integer name="config_appsCustomizeFadeInTime">250</integer>
+    <integer name="config_appsCustomizeFadeOutTime">200</integer>
+    <integer name="config_appsCustomizeHideAnimTime">300</integer>
+    <integer name="config_appsCustomizeShowAnimTime">250</integer>
+    <integer name="config_appsCustomizeSpringLoadedBgAlpha">45</integer>
+    <integer name="config_appsCustomizeWorkspaceAnimationStagger">40</integer>
+    <integer name="config_appsCustomizeWorkspaceShrinkTime">300</integer>
+    <integer name="config_cameraDistance">6500</integer>
+    <integer name="config_dragFadeOutAlpha">80</integer>
+    <integer name="config_dragFadeOutDuration">250</integer>
+    <integer name="config_dragOutlineFadeTime">900</integer>
+    <integer name="config_dragOutlineMaxAlpha">128</integer>
+    <integer name="config_dropAnimMaxDist">800</integer>
+    <integer name="config_dropAnimMaxDuration">500</integer>
+    <integer name="config_dropAnimMinDuration">100</integer>
+    <integer name="config_dropTargetBgTransitionDuration">0</integer>
+    <integer name="config_folderAnimDuration">120</integer>
+    <integer name="config_tabTransitionDuration">250</integer>
+    <integer name="config_workspaceAppsCustomizeAnimationStagger">100</integer>
+    <integer name="config_workspaceSpringLoadShrinkPercentage">80</integer>
+    <integer name="config_workspaceUnshrinkTime">300</integer>
+    <integer name="folder_max_count_x">4</integer>
+    <integer name="folder_max_count_y">4</integer>
+    <integer name="folder_max_num_items">16</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="PKG">jp.co.disney.apps.base.disneymarketapp</string>
+    <string name="URL">http://aka-spcd.disney.co.jp/SP/CA/Prod/Base/</string>
+    <string name="accessibility_all_apps_button">"アプリ"</string>
+    <string name="accessibility_delete_button">"削除"</string>
+    <string name="activity_not_found">"このアプリはインストールされていません。"</string>
+    <string name="all_apps_button_label">"アプリ"</string>
+    <string name="all_apps_home_button_label">"ホーム"</string>
+    <string name="application_name">"Disneyきせかえ"</string>
+    <string name="application_name_shortcut">"Disneyきせかえアイコン"</string>
+    <string name="apps_customize_apps_scroll_format">"アプリの%1$d/%2$dページ"</string>
+    <string name="apps_customize_disney_scroll_format">"Disneyアプリの%1$d/%2$dページ"</string>
+    <string name="apps_customize_widgets_scroll_format">"ウィジェットの%1$d/%2$dページ"</string>
+    <string name="baseapp_dl_dialog_title">Downloading...</string>
+    <string name="baseapp_dl_error">ディズニーマーケットのダウンロード処理でエラーが発生しました。しばらく時間をおいてから再度アクセスしてください。</string>
+    <string name="baseapp_dl_stop">通信エラーが発生しました。通信環境の良いところで再度ご利用ください。</string>
+    <string name="baseapp_dl_txt">本アプリをご利用いただくには「Disneyマーケット」アプリが必要です。\n下記「ダウンロード」ボタンより「Disneyマーケット」アプリをダウンロード／インストールください。	</string>
+    <string name="cab_app_selection_text">"1つのアプリが選択されています"</string>
+    <string name="cab_folder_selection_text">"1つのフォルダが選択されています"</string>
+    <string name="cab_menu_app_info">"アプリの詳細"</string>
+    <string name="cab_menu_delete_app">"アプリをアンインストール"</string>
+    <string name="cab_shortcut_selection_text">"1つのショートカットが選択されています"</string>
+    <string name="cab_widget_selection_text">"1つのウィジェットが選択されています"</string>
+    <string name="cancel_action">"キャンセル"</string>
+    <string name="chooser_wallpaper">"壁紙の選択"</string>
+    <string name="completely_out_of_space">"ホーム画面に空きスペースがありません。"</string>
+    <string name="default_scroll_format">"%1$d/%2$dページ"</string>
+    <string name="delete_target_label">"削除"</string>
+    <string name="delete_zone_label_all_apps">"アンインストール"</string>
+    <string name="delete_zone_label_all_apps_system_app">"アップデートを削除"</string>
+    <string name="delete_zone_label_workspace">"削除"</string>
+    <string name="dream_name">"Rocket Launcher"</string>
+    <string name="err_msg_appli_picker">通信エラーが発生しました。\n通信環境の良いところで\n再度ご利用ください。</string>
+    <string name="err_msg_load_theme">テーマの読込に失敗しました。</string>
+    <string name="err_msg_no_theme_history">設定履歴がありません</string>
+    <string name="external_drop_widget_error">"このホーム画面にアイテムをドロップできませんでした。"</string>
+    <string name="external_drop_widget_pick_format" translatable="false">%1$s (%2$d \u00d7 %3$d)</string>
+    <string name="external_drop_widget_pick_title">"作成するウィジェットの選択"</string>
+    <string name="folder_closed">"フォルダは閉じています"</string>
+    <string name="folder_hint_text">"名前のないフォルダ"</string>
+    <string name="folder_name"/>
+    <string name="folder_name_format">"フォルダ: <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string name="folder_opened">"フォルダが開いています。<ns1:g id="WIDTH">%1$d</ns1:g>x<ns1:g id="HEIGHT">%2$d</ns1:g>の大きさです"</string>
+    <string name="folder_renamed">"フォルダの名前を「<ns1:g id="NAME">%1$s</ns1:g>」に変更しました"</string>
+    <string name="folder_tap_to_close">"タップしてフォルダを閉じます"</string>
+    <string name="folder_tap_to_rename">"タップして名前の変更を保存します"</string>
+    <string name="gadget_error_text">"ウィジェットを表示できません"</string>
+    <string name="group_applications">"アプリ"</string>
+    <string name="group_shortcuts">"ショートカット"</string>
+    <string name="group_wallpapers">"壁紙"</string>
+    <string name="group_widgets">"ウィジェット"</string>
+    <string name="has_reached_max_panel">"追加できるパネルは最大9枚までです"</string>
+    <string name="home">"Home"</string>
+    <string name="hotseat_out_of_space">"ホットシートに空きスペースがありません。"</string>
+    <string name="invalid_app_fig1">通信を有効にして再度起動してください</string>
+    <string name="invalid_app_fig2">会員登録をして再度起動してください</string>
+    <string name="invalid_app_fig3">Disneyポータルを有効にして再度起動してください</string>
+    <string name="invalid_hotseat_item">"このウィジェットはホットシートには大きすぎます。"</string>
+    <string name="long_press_widget_to_add">"ウィジェットを追加するには押し続けます。"</string>
+    <string name="loop_setting">画面ループ設定</string>
+    <string name="menu_add">"追加"</string>
+    <string name="menu_item_add_item">"ホーム画面に追加"</string>
+    <string name="menu_wallpaper">"壁紙"</string>
+    <string name="out_of_space">"ホーム画面に空きスペースがありません。"</string>
+    <string name="rename_action">"OK"</string>
+    <string name="rename_folder_label">"フォルダ名"</string>
+    <string name="rename_folder_title">"フォルダ名を変更"</string>
+    <string name="shortcut_duplicate">"ショートカット「<ns1:g id="NAME">%s</ns1:g>」は既に存在します。"</string>
+    <string name="shortcut_install_failed">"ショートカットの作成に失敗しました。"</string>
+    <string name="shortcut_installed">"ショートカット「<ns1:g id="NAME">%s</ns1:g>」を作成しました。"</string>
+    <string name="shortcut_uninstalled">"ショートカット「<ns1:g id="NAME">%s</ns1:g>」を削除しました。"</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="title_appli_picker">アプリを選択</string>
+    <string name="title_appli_picker_close">閉じる</string>
+    <string name="title_select_application">"アプリの選択"</string>
+    <string name="title_select_shortcut">"ショートカットを選択"</string>
+    <string name="title_widget_picker">ウィジェットを選択</string>
+    <string name="uid_name">"Android Core Apps"</string>
+    <string name="uninstall_system_app_text">"このシステムアプリはアンインストールできません。"</string>
+    <string name="widget_battery_name">Disneyきせかえ バッテリーウィジェット(2×3)</string>
+    <string name="widget_dims_format">"%1$d×%2$d"</string>
+    <string name="workspace_description_format">"ホーム画面: %1$d"</string>
+    <string name="workspace_scroll_format">"ホーム画面: %1$d/%2$d"</string>
+    <style name="CustomCheckBox" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/icon_listtype_checkbox</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="EditTextCustom" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/line_apprename</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+    <style name="MyDialogTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="MyTheme" theme="@android:style/Theme.Translucent">
+    <item name="android:windowBackground">@color/ui_white</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="TabIndicator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="TabIndicator.AppsCustomize">
+        <item name="android:maxWidth">130dp</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
+    <style name="TextAppearance.Compat.Notification.Info">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Line2" parent="TextAppearance.Compat.Notification.Info"/>
+    <style name="TextAppearance.Compat.Notification.Time">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+    <style name="Theme" parent="@android:style/Theme.Holo.Wallpaper.NoTitleBar">
+    </style>
+    <style name="Theme.CustomProgressDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+    </style>
+    <style name="Widget.Compat.NotificationActionContainer" parent=""/>
+    <style name="Widget.Compat.NotificationActionText" parent=""/>
+    <style name="WorkspaceIcon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textSize">@dimen/workspace_icon_text_size</item>
+        <item name="android:textColor">@color/workspace_icon_text_color</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:shadowColor">#B0000000</item>
+    </style>
+    <style name="WorkspaceIcon.Portrait">
+        <item name="android:drawablePadding">@dimen/app_icon_drawable_padding</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">@dimen/app_icon_padding_top</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="WorkspaceIcon.Portrait.AppsCustomize">
+        <item name="android:shadowRadius">0.0</item> <!-- Don't use text shadow -->
+        <item name="android:singleLine">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:drawablePadding">2dp</item>
+    </style>
+    <style name="WorkspaceIcon.Portrait.Folder">
+        <item name="android:shadowRadius">0.0</item> <!-- Don't use text shadow -->
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:paddingTop">@dimen/folder_icon_padding_top</item>
+    </style>
+</resources>

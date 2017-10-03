@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appicon_list_row_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:orientation="horizontal" >
+    
+    <jp.co.disney.apps.managed.kisekaeapp.iconpicker.SizeChangeableCheckBox
+        	android:id="@+id/appicon_list_checkbox"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            style="@style/CustomCheckBox"
+            android:layout_gravity="center_vertical"
+            android:checked="false"
+         />
+
+
+	<ImageView
+	    	android:id="@+id/appicon_list_selficon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            />
+
+	<ImageView
+	    	android:id="@+id/appicon_list_arrow"
+	    	android:src="@drawable/icon_listtype_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            />
+
+	<ImageView
+	    	android:id="@+id/appicon_list_appicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            />
+
+</LinearLayout>
+

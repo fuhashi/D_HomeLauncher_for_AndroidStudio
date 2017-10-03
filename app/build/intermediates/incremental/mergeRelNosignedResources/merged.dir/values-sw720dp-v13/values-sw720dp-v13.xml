@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_useDropTargetDownTransition">true</bool>
+    <bool name="config_workspaceFadeAdjacentScreens">true</bool>
+    <bool name="is_large_screen">true</bool>
+    <dimen name="all_apps_button_vertical_padding">4dip</dimen>
+    <dimen name="app_icon_padding_top">0dp</dimen>
+    <dimen name="app_icon_size">72dp</dimen>
+    <dimen name="apps_customize_cell_height">96dp</dimen>
+    <dimen name="apps_customize_cell_width">96dp</dimen>
+    <dimen name="apps_customize_pageLayoutHeightGap">36dp</dimen>
+    <dimen name="apps_customize_pageLayoutPaddingLeft">24dp</dimen>
+    <dimen name="apps_customize_pageLayoutPaddingRight">24dp</dimen>
+    <dimen name="apps_customize_pageLayoutWidthGap">36dp</dimen>
+    <dimen name="button_bar_height">126dp</dimen>
+    <dimen name="dragViewOffsetX">0dp</dimen>
+    <dimen name="dragViewOffsetY">0dp</dimen>
+    <dimen name="folder_cell_height">96dp</dimen>
+    <dimen name="folder_padding">4dp</dimen>
+    <dimen name="reveal_radius">72dp</dimen>
+    <dimen name="scroll_zone">40dp</dimen>
+    <dimen name="workspace_divider_padding_left">72dp</dimen>
+    <dimen name="workspace_divider_padding_right">72dp</dimen>
+    <dimen name="workspace_divider_width">0dp</dimen>
+    <dimen name="workspace_page_spacing">24dp</dimen>
+    <integer name="apps_customize_maxCellCountX">-1</integer>
+    <integer name="apps_customize_maxCellCountY">7</integer>
+    <integer name="apps_customize_widget_cell_count_x">3</integer>
+    <integer name="apps_customize_widget_cell_count_y">3</integer>
+    <integer name="config_cameraDistance">18000</integer>
+    <integer name="config_workspaceSpringLoadShrinkPercentage">90</integer>
+    <style name="TabIndicator.AppsCustomize">
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxWidth">180dp</item>
+    </style>
+    <style name="Theme" parent="android:Theme.Holo.Wallpaper.NoTitleBar">
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <style name="WorkspaceIcon.Portrait">
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">@dimen/app_icon_padding_top</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="WorkspaceIcon.Portrait.AppsCustomize">
+        <item name="android:shadowRadius">0.0</item> <!-- Don't use text shadow -->
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="WorkspaceIcon.Portrait.Folder">
+        <item name="android:shadowRadius">0.0</item> <!-- Don't use text shadow -->
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginTop">-2dp</item>
+    </style>
+</resources>
