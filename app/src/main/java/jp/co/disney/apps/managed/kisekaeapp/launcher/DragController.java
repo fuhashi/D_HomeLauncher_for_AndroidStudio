@@ -624,10 +624,18 @@ public class DragController {
             if (!target.isDropEnabled())
                 continue;
 
+            target.getHitRect(r);
+
             // TODO: 一般化すること
             boolean forceEnable = (target instanceof PageEditScreen);
-
-            target.getHitRect(r);
+            if (target instanceof PageEditScreen) {
+                forceEnable = true;
+            } else if (target instanceof Workspace) {
+                // 端末によって、ナビゲーションバーの領域にショートカットがドロップできてしまう問題の対処
+                if (y > r.height() - 1) { // 判定はなくても良いかもしれないが、影響を最小限にするため
+                    forceEnable = true;
+                }
+            }
 
             // Convert the hit rect to DragLayer coordinates
             target.getLocationInDragLayer(dropCoordinates);
