@@ -35,10 +35,10 @@
     "version" : "1.0",
     "analytics" : {
         "rsids" : "wdgintjpspcappsdev",//開発レポートスイート名
-        "server" : "192.168.1.43:50000", // [Bloodhound IP]:[Port]_sam"192.168.1.46:50000"
+        "server" : "disneyinternational.112.2o7.net", // [Bloodhound IP]:[Port]_sam"192.168.1.46:50000" "192.168.1.43:50000"
         "charset" : "UTF-8",
-        "ssl" : false,//[false]:Bloodhound取得可能、[true]:Bloodhound取得不可
-        "offlineEnabled" : false,
+        "ssl" : true,//[false]:Bloodhound取得可能、[true]:Bloodhound取得不可
+        "offlineEnabled" : true,//false,
         "lifecycleTimeout" : 300,
         "referrerTimeout" : 0,
         "batchLimit" : 0,
